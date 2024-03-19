@@ -1,0 +1,23 @@
+.posts {
+  background-color: #edf7fa;
+
+  & .posts_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 25px;
+  }
+
+  & h5 {
+    font-size: 26px;
+  }
+
+  & a {
+    color: var(--color-link);
+  }
+
+  & .postList {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
+}
