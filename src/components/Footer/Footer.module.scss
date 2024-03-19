@@ -1,0 +1,16 @@
+.footer {
+  text-align: center;
+  margin-top: auto;
+
+  & .social {
+    display: flex;
+    max-width: 230px;
+    margin: 0 auto 25px;
+    justify-content: space-between;
+  }
+
+  & p {
+    font-size: 14px;
+    margin-bottom: 54px;
+  }
+}

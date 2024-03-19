@@ -32,3 +32,13 @@ body {
   font-family: 'Heebo', sans-serif;
   font-size: 16px;
 }
+
+html {
+  overflow-y: scroll;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
