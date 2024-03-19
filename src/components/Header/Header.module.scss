@@ -1,1 +1,35 @@
+.header {
+  & .header_inner {
+    display: flex;
+  }
 
+  & .header_content {
+    max-width: 600px;
+  }
+
+  & .header_content h1 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  & .header_content p {
+    margin-bottom: 47px;
+  }
+
+  & .header_content button {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  & .header_content button:hover {
+    background-color: var(--color-hover-btn);
+  }
+
+  & .header_avatar {
+    margin-left: auto;
+  }
+}
