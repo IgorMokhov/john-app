@@ -1,3 +1,7 @@
+import designingDashboardsImg from '../assets/works/designing-dashboards-img.jpg';
+import malayalamTypeImg from '../assets/works/malayalam-type-img.jpg';
+import vibrantPortraitsImg from '../assets/works/vibrant-portraits-img.jpg';
+
 export const posts = [
   {
     id: 1,
@@ -12,6 +16,36 @@ export const posts = [
     title: 'Creating pixel perfect icons in Figma',
     date: '12 Feb 2020',
     categories: 'Figma, Icon Design',
+    content:
+      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+  },
+];
+
+export const works = [
+  {
+    id: 1,
+    title: 'Designing Dashboards',
+    date: '2020',
+    categories: 'Dashboard',
+    image: designingDashboardsImg,
+    content:
+      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+  },
+  {
+    id: 2,
+    title: 'Vibrant Portraits of 2020',
+    date: '2018',
+    categories: 'Illustration',
+    image: vibrantPortraitsImg,
+    content:
+      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+  },
+  {
+    id: 3,
+    title: '36 Days of Malayalam type',
+    date: '2018',
+    categories: 'Typography',
+    image: malayalamTypeImg,
     content:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
   },
