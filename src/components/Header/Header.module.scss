@@ -1,22 +1,45 @@
 .header {
   margin-bottom: 70px;
 
+  @media screen and (max-width: 720px) {
+    margin-bottom: 60px;
+  }
+
   & .header_inner {
     display: flex;
+
+    @media screen and (max-width: 720px) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   & .header_content {
     max-width: 600px;
+
+    @media screen and (max-width: 720px) {
+      max-width: 100%;
+      order: 2;
+    }
   }
 
   & .header_content h1 {
     font-size: 44px;
     font-weight: bold;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 720px) {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
   }
 
   & .header_content p {
     margin-bottom: 47px;
+
+    @media screen and (max-width: 720px) {
+      margin-bottom: 27px;
+    }
   }
 
   & .header_content button {
@@ -33,5 +56,10 @@
 
   & .header_avatar {
     margin-left: auto;
+
+    @media screen and (max-width: 720px) {
+      margin: 80px auto 34px;
+      order: 1;
+    }
   }
 }

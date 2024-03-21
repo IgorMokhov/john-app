@@ -56,6 +56,7 @@ export const Form: FC<FormProps> = ({ title, handleClick }) => {
         <input
           id="email"
           type="text"
+          autoComplete="off"
           value={email}
           placeholder="example@mail.ru"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -70,6 +71,7 @@ export const Form: FC<FormProps> = ({ title, handleClick }) => {
           id="password"
           type="password"
           value={password}
+          autoComplete="off"
           placeholder="******"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setPassword(e.target.value)

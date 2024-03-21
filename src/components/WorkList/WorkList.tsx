@@ -7,6 +7,7 @@ export const WorkList = () => {
   return (
     <div className={styles.workList}>
       <Container>
+        <span className={styles.subtitle}>Featured works</span>
         {works.map((work) => {
           return <WorkItem key={work.id} {...work} />;
         })}

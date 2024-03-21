@@ -4,13 +4,27 @@
   padding-bottom: 15px;
   margin-bottom: 31px;
 
+  @media screen and (max-width: 890px) {
+    flex-direction: column;
+    max-width: 345px;
+    margin: 0 auto 15px;
+  }
+
   & .workItem_content {
     margin-left: 18px;
+
+    @media screen and (max-width: 890px) {
+      margin-left: 0;
+    }
   }
 
   & h3 {
     font-size: 30px;
     margin-bottom: 12px;
+
+    @media screen and (max-width: 890px) {
+      font-size: 24px;
+    }
   }
 
   & .date {
@@ -21,14 +35,28 @@
     font-weight: bold;
     padding: 2px 10px;
     margin-right: 26px;
+
+    @media screen and (max-width: 890px) {
+      font-size: 16px;
+    }
   }
 
   & .categories {
     color: var(--color-light);
     font-size: 20px;
+
+    @media screen and (max-width: 890px) {
+      font-size: 16px;
+    }
   }
 
   & p {
     margin-top: 17px;
+  }
+
+  & img {
+    @media screen and (max-width: 890px) {
+      margin-bottom: 10px;
+    }
   }
 }

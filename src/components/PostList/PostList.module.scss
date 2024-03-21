@@ -4,20 +4,36 @@
   & .posts_header {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0 25px;
+    padding: 15px 0 15px;
+
+    @media screen and (max-width: 890px) {
+      justify-content: center;
+    }
   }
 
-  & h5 {
-    font-size: 26px;
+  & span {
+    font-size: 22px;
+
+    @media screen and (max-width: 890px) {
+      font-size: 18px;
+    }
   }
 
   & a {
     color: var(--color-link);
+
+    @media screen and (max-width: 890px) {
+      display: none;
+    }
   }
 
   & .postList {
     display: flex;
     justify-content: space-between;
     padding-bottom: 32px;
+
+    @media screen and (max-width: 890px) {
+      flex-direction: column;
+    }
   }
 }

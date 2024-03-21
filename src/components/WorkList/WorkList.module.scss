@@ -1,3 +1,14 @@
 .workList {
-  margin: 90px 0;
+  margin-bottom: 50px;
+
+  & .subtitle {
+    display: block;
+    font-size: 22px;
+    margin: 25px 10px;
+
+    @media screen and (max-width: 890px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
 }

@@ -19,8 +19,14 @@ a {
   color: inherit;
 }
 
-a.active {
+// for active navlink
+.active {
   color: var(--color-secondary);
+}
+
+// for open or close mobile menu
+.activeMenu {
+  transform: translateX(-100%);
 }
 
 ul,
