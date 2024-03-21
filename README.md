@@ -1,5 +1,9 @@
 # John App
 
+![demo](https://github.com/IgorMokhov/valantis-app/assets/115712538/27e32cbd-359c-46f2-aa41-41e7eb2534f1)
+![demo](https://github.com/IgorMokhov/valantis-app/assets/115712538/1f8208fa-5a0f-4850-ae68-de747a37661f)
+[Deployed Project](https://john-app.vercel.app/login)
+
 ## Introduction
 
 John App - React Single Page Application.
@@ -50,13 +54,38 @@ Test task for the position of "Junior Frontend developer" (MacBuildServer)
 
 ### Elements
 
+- Registration and authorization are carried out via email/password
+- Firebase is used as the backend for authentication
+- All data entered into the form are checked for validity, and an error message is displayed for invalid data
+- The token obtained from Firebase Authentication is stored in Redux
+- The token can be removed from Redux by clicking on the logout button
+- HomePage pages is only available to registered users
+
+### Security
+- FIREBASE_API_KEYS are stored in a separate .env file.
+
+### Routing
+- HomePage
+- LoginPage
+- RegisterPage
+- NotFoundPage
+
+### State Management
+
+- Redux Toolkit
+- Implemented through Slices
+
 ### Layout
 
 - Responsive design up to 320px.
 
 ## Technologies
 
+- [**TypeScript**](https://www.typescriptlang.org/): A superset of JavaScript that adds static types to the language.
 - [**React**](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [**React Router**](https://reactrouter.com/): Enables navigation and routing in the React application.
+- [**Redux Toolkit**](https://redux-toolkit.js.org/): Facilitates state management in React applications.
+- [**Firebase**](https://firebase.google.com/): Firebase, a platform developed by Google, specializes in authentication and offers a suite of services for mobile and web applications
 - [**Vite**](https://vitejs.dev/): A modern frontend build tool that significantly improves the development experience.
 
 ## Getting Started
