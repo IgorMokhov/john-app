@@ -54,8 +54,9 @@ Test task for the position of "Junior Frontend developer" (MacBuildServer)
 
 ### Elements
 
-- Registration and authorization are carried out via email/password
 - Firebase is used as the backend for authentication
+- Registration and authorization are carried out via email/password
+- Possible registration/authentication errors are logged to the console.
 - All data entered into the form are checked for validity, and an error message is displayed for invalid data
 - The token obtained from Firebase Authentication is stored in Redux
 - The token can be removed from Redux by clicking on the logout button
