@@ -7,6 +7,7 @@
   & label {
     display: block;
     cursor: pointer;
+    position: relative;
   }
 
   & input,
@@ -21,12 +22,20 @@
     background-color: #edf7fa;
     cursor: pointer;
     padding: 15px 20px;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   }
 
   & input:focus {
     outline: none;
+  }
+
+  & .error {
+    position: absolute;
+    top: 50px;
+    left: 18px;
+    font-size: 12px;
+    color: red;
   }
 
   & button {
