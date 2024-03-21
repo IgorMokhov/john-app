@@ -2,7 +2,24 @@ import designingDashboardsImg from '../assets/works/designing-dashboards-img.jpg
 import malayalamTypeImg from '../assets/works/malayalam-type-img.jpg';
 import vibrantPortraitsImg from '../assets/works/vibrant-portraits-img.jpg';
 
-export const posts = [
+export interface Post {
+  id: number;
+  title: string;
+  date: string;
+  categories: string;
+  content: string;
+}
+
+export interface Work {
+  id: number;
+  title: string;
+  date: string;
+  categories: string;
+  image: string;
+  content: string;
+}
+
+export const posts: Post[] = [
   {
     id: 1,
     title: 'Making a design system from scratch',
@@ -21,7 +38,7 @@ export const posts = [
   },
 ];
 
-export const works = [
+export const works: Work[] = [
   {
     id: 1,
     title: 'Designing Dashboards',

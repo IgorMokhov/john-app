@@ -14,4 +14,16 @@
   & a:hover {
     color: var(--color-hover-btn);
   }
+
+  & .logoutBtn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -33px;
+  }
+
+  & .logoutBtn:hover {
+    color: var(--color-hover-btn);
+  }
 }

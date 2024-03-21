@@ -1,7 +1,7 @@
 import { Container } from '../Container/Container';
+import { WorkItem } from '../WorkItem/WorkItem';
 import { works } from '../../mock/mock';
 import styles from './WorkList.module.scss';
-import { WorkItem } from '../WorkItem/WorkItem';
 
 export const WorkList = () => {
   return (

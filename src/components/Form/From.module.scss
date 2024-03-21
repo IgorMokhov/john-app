@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & label {
+    display: block;
+    cursor: pointer;
+  }
+
+  & input,
+  & input::placeholder {
+    color: var(--color-light);
+  }
+
+  & input {
+    display: block;
+    width: 300px;
+    border: none;
+    background-color: #edf7fa;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 0 auto 20px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  }
+
+  & input:focus {
+    outline: none;
+  }
+
+  & button {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  & button:hover {
+    background-color: var(--color-hover-btn);
+  }
+}

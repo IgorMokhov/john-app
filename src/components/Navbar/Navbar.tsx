@@ -1,8 +1,17 @@
 import { NavLink } from 'react-router-dom';
-import styles from './Navbar.module.scss';
 import { Container } from '../Container/Container';
+import { useAppDispatch, useAppSelector } from '../../hooks/redux-hooks';
+import { removeUser } from '../../store/slices/userSlice';
+import styles from './Navbar.module.scss';
 
 export const Navbar = () => {
+  const dispatch = useAppDispatch();
+  const { email } = useAppSelector((state) => state.user);
+
+  const preventDefaultClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <nav className={styles.navbar}>
       <Container>
@@ -11,15 +20,27 @@ export const Navbar = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="works">Works</NavLink>
+            <NavLink to="works" onClick={preventDefaultClick}>
+              Works
+            </NavLink>
           </li>
           <li>
-            <NavLink to="blog">Blog</NavLink>
+            <NavLink to="blog" onClick={preventDefaultClick}>
+              Blog
+            </NavLink>
           </li>
           <li>
-            <NavLink to="contact">Contacts</NavLink>
+            <NavLink to="contact" onClick={preventDefaultClick}>
+              Contacts
+            </NavLink>
           </li>
         </ul>
+        <button
+          className={styles.logoutBtn}
+          onClick={() => dispatch(removeUser())}
+        >
+          Log out ({email})
+        </button>
       </Container>
     </nav>
   );
