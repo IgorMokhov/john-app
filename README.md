@@ -113,7 +113,7 @@ To start the development server, use the following command:
   npm run dev
 ```
 
-Visit the provided local URL in your browser to explore the "My Books" application.
+Visit the provided local URL in your browser to explore the "John App" application.
 
 <br/>
 
